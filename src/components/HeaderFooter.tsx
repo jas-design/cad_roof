@@ -13,7 +13,7 @@ const Logo = () => (
   <Link to="/" className="flex items-center gap-3 group">
     <div className="relative h-14 w-auto flex items-center justify-center">
        <img 
-         src="/logo.svg" 
+         src="logo.svg" 
          alt={COMPANY_NAME} 
          className="h-full w-auto object-contain"
          referrerPolicy="no-referrer"
@@ -137,7 +137,7 @@ export const Footer = () => {
           <div className="col-span-1 md:col-span-1">
              <div className="flex items-center gap-2 mb-8 h-12">
                 <img 
-                  src="/logo.svg" 
+                  src="logo.svg" 
                   alt={COMPANY_NAME} 
                   className="h-full w-auto object-contain brightness-0 invert"
                   referrerPolicy="no-referrer"

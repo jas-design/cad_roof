@@ -13,7 +13,9 @@ When you push to the `main` or `master` branch, the `Deploy to GitHub Pages` act
 - Push the static files to the `gh-pages` branch.
 
 **Troubleshooting "Not Working":**
-- **White Screen/404**: I have updated the project to use `HashRouter`. This ensures that refresh and direct navigation work perfectly on static hosts like GitHub Pages.
+- **White Screen/404**: I have updated the project specifically for your URL (`/cad_roof/`).
+  - **Base Path**: The `vite.config.ts` is now set to `base: '/cad_roof/'`. 
+  - **Routing**: the project uses `HashRouter` which ensures that sub-pages like `#/about` load correctly.
 - **Permission Denied**: Ensure you have given the GitHub Action "Write Permissions" (Settings > Actions > General > Workflow permissions > Read and write permissions).
 - **Settings**: Go to your GitHub Repository **Settings > Pages**. 
   - **Source**: Deploy from a branch.
