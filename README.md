@@ -1,20 +1,46 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# CAD Roof Solutions - Professional Roofing Website
 
-# Run and deploy your AI Studio app
+A high-performance, responsive roofing company website built with React, Tailwind CSS, and Framer Motion.
 
-This contains everything you need to run your app locally.
+## 🚀 GitHub Actions & Deployment
 
-View your app in AI Studio: https://ai.studio/apps/de18a026-af87-4c86-b8fe-eb12b3bb2107
+This project is fully configured for **GitHub Actions** to automate your deployment and code quality checks.
 
-## Run Locally
+### 1. Automated Deployment
+When you push to the `main` branch, the `Deploy to GitHub Pages` action (`.github/workflows/deploy.yml`) will:
+- Build the project (`npm run build`).
+- Push the static files to the `gh-pages` branch.
+- **Tip**: Go to your GitHub Repository Settings > Pages and ensure the source is set to the `gh-pages` branch.
 
-**Prerequisites:**  Node.js
+### 2. Code Quality Check
+Every push and pull request is automatically verified by the `Code Quality Check` action (`.github/workflows/verify.yml`). It runs:
+- `npm run lint` (TypeScript type checking).
 
+### 3. Manual Local Deployment
+If you prefer to deploy manually from your computer:
+- Run `npm run deploy` (requires `gh-pages` npm package, which is already installed).
+- Or use the included script: `./deploy.sh`
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🛠️ Development
+
+### Setup
+```bash
+npm install
+```
+
+### Start Development Server
+```bash
+npm run dev
+```
+
+### Production Build
+```bash
+npm run build
+```
+
+## 🎨 Design System
+- **Typography**: Inter (Sans-serif) with bold headings and tight tracking.
+- **Colors**: 
+  - Primary (Orange): `#FF7F28`
+  - Secondary (Deep Blue): `#3D409A`
+- **Animations**: Powered by `framer-motion` for smooth, high-impact interactions.
