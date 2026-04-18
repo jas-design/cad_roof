@@ -1,42 +1,40 @@
-<svg width="600" height="500" viewBox="0 0 600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Architectural Buildings Background (Simplified Perspective) -->
-  <!-- Left Side Buildings -->
-  <path d="M80 400 L80 320 L120 300 L120 400 Z" fill="#18181B" />
-  <path d="M125 400 L125 280 L170 260 L170 400 Z" fill="#27272A" />
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Architectural Buildings Background (B&W/Grey shades) -->
+  <!-- Left Side -->
+  <path d="M100 450 L100 350 L140 330 L140 450 Z" fill="#1A1A1B" /> <!-- Bricks-like dark -->
+  <path d="M145 450 L145 300 L200 280 L200 450 Z" fill="#3F3F46" /> <!-- Dark Grey -->
   
-  <!-- Center Tall Building -->
-  <path d="M220 400 L220 100 L320 60 L320 400 Z" fill="#94A3B8" />
-  <rect x="235" y="110" width="12" height="12" fill="#F1F5F9" opacity="0.8" />
-  <rect x="255" y="110" width="12" height="12" fill="#F1F5F9" opacity="0.8" />
-  <rect x="275" y="110" width="12" height="12" fill="#F1F5F9" opacity="0.8" />
-  <rect x="235" y="135" width="12" height="12" fill="#F1F5F9" opacity="0.8" />
-  <rect x="255" y="135" width="12" height="12" fill="#F1F5F9" opacity="0.8" />
-  <rect x="275" y="135" width="12" height="12" fill="#F1F5F9" opacity="0.8" />
+  <!-- Center Skyscrapers -->
+  <path d="M260 450 L260 120 L350 80 L350 450 Z" fill="#94A3B8" /> <!-- Light Grey -->
+  <path d="M355 450 L355 180 L420 160 L420 450 Z" fill="#4B5563" /> <!-- Mid Grey -->
 
-  <!-- Mid Right Buildings -->
-  <path d="M340 400 L340 160 L400 140 L400 400 Z" fill="#4B5563" />
-  <path d="M410 400 L410 240 L460 220 L460 400 Z" fill="#1F2937" />
+  <!-- Right Side -->
+  <path d="M430 450 L430 250 L480 230 L480 450 Z" fill="#27272A" /> <!-- Dark Grey -->
+  <path d="M485 450 L485 150 L550 120 L550 450 Z" fill="#09090B" /> <!-- Deep Black -->
 
-  <!-- Rightmost Building -->
-  <path d="M470 400 L470 180 L520 160 L520 400 Z" fill="#09090B" />
-  <rect x="480" y="195" width="6" height="6" fill="#71717A" />
-  <rect x="500" y="195" width="6" height="6" fill="#71717A" />
+  <!-- Building Windows (Detailing) -->
+  <rect x="275" y="130" width="8" height="8" fill="#F8FAFC" opacity="0.6"/>
+  <rect x="295" y="130" width="8" height="8" fill="#F8FAFC" opacity="0.6"/>
+  <rect x="315" y="130" width="8" height="8" fill="#F8FAFC" opacity="0.6"/>
+  <rect x="495" y="165" width="4" height="4" fill="#52525B"/>
+  <rect x="515" y="165" width="4" height="4" fill="#52525B"/>
+  <rect x="535" y="165" width="4" height="4" fill="#52525B"/>
 
-  <!-- Integrated "CAD" Overlay -->
-  <g transform="translate(40, 0)">
-    <!-- C (Navy Blue) -->
-    <path d="M110 370 C60 370 40 330 40 270 C40 210 60 170 110 170 C140 170 160 185 175 210" stroke="#3D409A" stroke-width="50" stroke-linecap="butt" fill="none" />
+  <!-- The "CAD" Typography -->
+  <g transform="translate(100, 100)">
+    <!-- C (Solid Navy Blue) -->
+    <path d="M100 300 C50 300 20 270 20 200 C20 130 50 100 100 100 C130 100 150 115 160 140" stroke="#3D409A" stroke-width="54" stroke-linecap="round" fill="none" />
     
-    <!-- Transition Roof Graphic (Integrated into A) -->
-    <!-- The Roof Peak -->
-    <path d="M280 160 L360 380 L200 380 Z" fill="#FF7F28" />
-    <!-- The A legs (Cut out effect / Overlapping) -->
-    <path d="M220 370 L280 160 L340 370" stroke="#3D409A" stroke-width="40" stroke-linecap="butt" fill="none" />
+    <!-- A (Integrated with Orange Roof) -->
+    <path d="M200 300 L275 80 L350 300" stroke="#3D409A" stroke-width="48" stroke-linecap="round" fill="none" />
+    <!-- Orange Roof Peak inside A -->
+    <path d="M275 80 L340 260 L210 260 Z" fill="#FF7F28" />
+    <path d="M275 80 L330 240 L220 240" stroke="#FF7F28" stroke-width="12" fill="none" opacity="0.8"/>
     
-    <!-- D (Navy Blue) -->
-    <path d="M400 370 L400 170 C480 170 540 200 540 270 C540 340 480 370 400 370 Z" fill="#3D409A" />
+    <!-- D (Solid Navy Blue) -->
+    <path d="M420 300 L420 100 C500 100 580 140 580 200 C580 260 500 300 420 300 Z" fill="#3D409A" />
   </g>
 
-  <!-- "ROOF SOLUTIONS" Text at the bottom -->
-  <text x="300" y="475" text-anchor="middle" font-family="Arial Black, Helvetica, sans-serif" font-size="68" font-weight="900" fill="#FF7F28" letter-spacing="4">ROOF SOLUTIONS</text>
+  <!-- "ROOF SOLUTIONS" Branding -->
+  <text x="400" y="540" text-anchor="middle" font-family="Arial Black, Helvetica, sans-serif" font-size="78" font-weight="950" fill="#FF7F28" letter-spacing="4">ROOF SOLUTIONS</text>
 </svg>

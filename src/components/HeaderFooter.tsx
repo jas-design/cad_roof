@@ -13,12 +13,19 @@ const Logo = () => {
   const baseUrl = import.meta.env.BASE_URL;
   return (
     <Link to="/" className="flex items-center gap-3 group">
-      <div className="relative h-14 w-auto flex items-center justify-center">
+      <div className="relative h-20 w-auto flex items-center justify-center">
          <img 
-           src={`${baseUrl}logo.svg`} 
+           src={`${baseUrl}logo.png`} 
            alt={COMPANY_NAME} 
            className="h-full w-auto object-contain"
            referrerPolicy="no-referrer"
+           onError={(e) => {
+             // Fallback to SVG if png is missing
+             const target = e.target as HTMLImageElement;
+             if (!target.src.endsWith('.svg')) {
+               target.src = `${baseUrl}logo.svg`;
+             }
+           }}
          />
       </div>
     </Link>
@@ -138,12 +145,18 @@ export const Footer = () => {
       <div className="container mx-auto px-4 md:px-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-1">
-             <div className="flex items-center gap-2 mb-8 h-12">
+             <div className="flex items-center gap-2 mb-8 h-16">
                 <img 
-                  src={`${import.meta.env.BASE_URL}logo.svg`} 
+                  src={`${import.meta.env.BASE_URL}logo.png`} 
                   alt={COMPANY_NAME} 
                   className="h-full w-auto object-contain brightness-0 invert"
                   referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    if (!target.src.endsWith('.svg')) {
+                      target.src = `${import.meta.env.BASE_URL}logo.svg`;
+                    }
+                  }}
                 />
              </div>
              <p className="text-sm leading-relaxed mb-8 font-medium">
