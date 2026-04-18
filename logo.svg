@@ -1,0 +1,22 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Buildings -->
+  <rect x="50" y="100" width="40" height="100" fill="#333" />
+  <rect x="95" y="70" width="50" height="130" fill="#666" />
+  <rect x="150" y="40" width="60" height="160" fill="#222" />
+  <rect x="215" y="80" width="45" height="120" fill="#888" />
+  <rect x="265" y="60" width="55" height="140" fill="#444" />
+  
+  <!-- Windows (white dots) -->
+  <circle cx="60" cy="120" r="2" fill="white" />
+  <circle cx="80" cy="120" r="2" fill="white" />
+  <circle cx="110" cy="90" r="2" fill="white" />
+  <circle cx="130" cy="90" r="2" fill="white" />
+  <circle cx="170" cy="60" r="2" fill="white" />
+  <circle cx="190" cy="60" r="2" fill="white" />
+  
+  <!-- CAD Text -->
+  <text x="50" y="240" font-family="Arial, sans-serif" font-size="100" font-weight="900" fill="#3D409A">CAD</text>
+  
+  <!-- ROOF SOLUTIONS Text -->
+  <text x="50" y="285" font-family="Arial, sans-serif" font-size="42" font-weight="900" fill="#FF7F28">ROOF SOLUTIONS</text>
+</svg>
