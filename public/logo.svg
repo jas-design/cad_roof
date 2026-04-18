@@ -1,22 +1,42 @@
-<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Buildings -->
-  <rect x="50" y="100" width="40" height="100" fill="#333" />
-  <rect x="95" y="70" width="50" height="130" fill="#666" />
-  <rect x="150" y="40" width="60" height="160" fill="#222" />
-  <rect x="215" y="80" width="45" height="120" fill="#888" />
-  <rect x="265" y="60" width="55" height="140" fill="#444" />
+<svg width="600" height="500" viewBox="0 0 600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Architectural Buildings Background (Simplified Perspective) -->
+  <!-- Left Side Buildings -->
+  <path d="M80 400 L80 320 L120 300 L120 400 Z" fill="#18181B" />
+  <path d="M125 400 L125 280 L170 260 L170 400 Z" fill="#27272A" />
   
-  <!-- Windows (white dots) -->
-  <circle cx="60" cy="120" r="2" fill="white" />
-  <circle cx="80" cy="120" r="2" fill="white" />
-  <circle cx="110" cy="90" r="2" fill="white" />
-  <circle cx="130" cy="90" r="2" fill="white" />
-  <circle cx="170" cy="60" r="2" fill="white" />
-  <circle cx="190" cy="60" r="2" fill="white" />
-  
-  <!-- CAD Text -->
-  <text x="50" y="240" font-family="Arial, sans-serif" font-size="100" font-weight="900" fill="#3D409A">CAD</text>
-  
-  <!-- ROOF SOLUTIONS Text -->
-  <text x="50" y="285" font-family="Arial, sans-serif" font-size="42" font-weight="900" fill="#FF7F28">ROOF SOLUTIONS</text>
+  <!-- Center Tall Building -->
+  <path d="M220 400 L220 100 L320 60 L320 400 Z" fill="#94A3B8" />
+  <rect x="235" y="110" width="12" height="12" fill="#F1F5F9" opacity="0.8" />
+  <rect x="255" y="110" width="12" height="12" fill="#F1F5F9" opacity="0.8" />
+  <rect x="275" y="110" width="12" height="12" fill="#F1F5F9" opacity="0.8" />
+  <rect x="235" y="135" width="12" height="12" fill="#F1F5F9" opacity="0.8" />
+  <rect x="255" y="135" width="12" height="12" fill="#F1F5F9" opacity="0.8" />
+  <rect x="275" y="135" width="12" height="12" fill="#F1F5F9" opacity="0.8" />
+
+  <!-- Mid Right Buildings -->
+  <path d="M340 400 L340 160 L400 140 L400 400 Z" fill="#4B5563" />
+  <path d="M410 400 L410 240 L460 220 L460 400 Z" fill="#1F2937" />
+
+  <!-- Rightmost Building -->
+  <path d="M470 400 L470 180 L520 160 L520 400 Z" fill="#09090B" />
+  <rect x="480" y="195" width="6" height="6" fill="#71717A" />
+  <rect x="500" y="195" width="6" height="6" fill="#71717A" />
+
+  <!-- Integrated "CAD" Overlay -->
+  <g transform="translate(40, 0)">
+    <!-- C (Navy Blue) -->
+    <path d="M110 370 C60 370 40 330 40 270 C40 210 60 170 110 170 C140 170 160 185 175 210" stroke="#3D409A" stroke-width="50" stroke-linecap="butt" fill="none" />
+    
+    <!-- Transition Roof Graphic (Integrated into A) -->
+    <!-- The Roof Peak -->
+    <path d="M280 160 L360 380 L200 380 Z" fill="#FF7F28" />
+    <!-- The A legs (Cut out effect / Overlapping) -->
+    <path d="M220 370 L280 160 L340 370" stroke="#3D409A" stroke-width="40" stroke-linecap="butt" fill="none" />
+    
+    <!-- D (Navy Blue) -->
+    <path d="M400 370 L400 170 C480 170 540 200 540 270 C540 340 480 370 400 370 Z" fill="#3D409A" />
+  </g>
+
+  <!-- "ROOF SOLUTIONS" Text at the bottom -->
+  <text x="300" y="475" text-anchor="middle" font-family="Arial Black, Helvetica, sans-serif" font-size="68" font-weight="900" fill="#FF7F28" letter-spacing="4">ROOF SOLUTIONS</text>
 </svg>
