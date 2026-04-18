@@ -7,10 +7,18 @@ A high-performance, responsive roofing company website built with React, Tailwin
 This project is fully configured for **GitHub Actions** to automate your deployment and code quality checks.
 
 ### 1. Automated Deployment
-When you push to the `main` branch, the `Deploy to GitHub Pages` action (`.github/workflows/deploy.yml`) will:
+When you push to the `main` or `master` branch, the `Deploy to GitHub Pages` action will:
 - Build the project (`npm run build`).
+- Create a `404.html` fallback (to support refresh on sub-pages).
 - Push the static files to the `gh-pages` branch.
-- **Tip**: Go to your GitHub Repository Settings > Pages and ensure the source is set to the `gh-pages` branch.
+
+**Troubleshooting "Not Working":**
+- **White Screen/404**: I have updated the project to use `HashRouter`. This ensures that refresh and direct navigation work perfectly on static hosts like GitHub Pages.
+- **Permission Denied**: Ensure you have given the GitHub Action "Write Permissions" (Settings > Actions > General > Workflow permissions > Read and write permissions).
+- **Settings**: Go to your GitHub Repository **Settings > Pages**. 
+  - **Source**: Deploy from a branch.
+  - **Branch**: Select `gh-pages` and `/ (root)`.
+- **Custom Domain**: If using a custom domain, ensure your `CNAME` is set up in the `public/` folder.
 
 ### 2. Code Quality Check
 Every push and pull request is automatically verified by the `Code Quality Check` action (`.github/workflows/verify.yml`). It runs:
